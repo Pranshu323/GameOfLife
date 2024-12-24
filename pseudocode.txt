@@ -1,0 +1,14 @@
+let list be map of dimensions x and y
+
+list inside a list in the way 
+
+[
+[0, 0, 0 ,0],
+[0, 0, 0 ,0],
+[0, 0, 0 ,0],
+[0, 0, 0 ,0]
+]
+
+for y in list:
+   for x in list[y]:
+      find_neighbors(list, x , y)

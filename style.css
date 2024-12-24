@@ -1,0 +1,13 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+  canvas {
+    display: block;
+  }
+  
+section{
+  border: solid;
+  border-radius: 23;
+  align-items: flex-start;
+}
