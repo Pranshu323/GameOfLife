@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="en">
+<head>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.3/addons/p5.sound.min.js"></script>
@@ -9,11 +9,23 @@
     <title>
         Simulation fun-guy
     </title>
-  </head>
-  <body>
-    <section>
-      <textarea>yo</textarea>
-    </section>
+</head>
+<body>
+
+    <div class="controls">
+        <label for="speed">Speed(Frames per second): </label>
+        <input type="range" id="speed" min="1" max="120" value="30">
+        <label for="birth">Birth(No of cells required to be born): </label>
+        <input type="text" id="birth" value="3">
+        <label for="survival">Survival(no of cells required to stay alive): </label>
+        <input type="text" id="survival" value="2,3">
+        <label for="maxAge">Max Age(maximum age of cells): </label>
+        <input type="number" id="maxAge" value="25">
+        <label for="resolution">Resolution(resolution of the screen): </label>
+        <input type="number" id="resolution" value="5">
+        <button onclick="updatePara()">Update</button>
+        <button onclick="resetGrid()">Reset</button>
+    </div>
     <script src="sketch.js"></script>
-  </body>
+</body>
 </html>

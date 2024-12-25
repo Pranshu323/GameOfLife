@@ -1,13 +1,14 @@
-html, body {
-    margin: 0;
-    padding: 0;
-  }
-  canvas {
-    display: block;
-  }
-  
-section{
-  border: solid;
-  border-radius: 23;
-  align-items: flex-start;
+body {
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+canvas { 
+border: 1px solid black; 
+} 
+.controls {
+margin: 10px; 
+} 
+.controls input {
+margin: 5px;
 }
